@@ -2,18 +2,18 @@ import { createRouter, createWebHashHistory, type RouteRecordRaw } from "vue-rou
 
 const routes: RouteRecordRaw[] = [
     {
-        // path: '/',
-        // component: () => import('@/views/layout/index.vue'),
-        // redirect: '/home',
-
-        // children: [
-        // {
-        //     path: '/home',
-        //     name: 'home',
-        //     component: () => import('@/views/home/index.vue'),
-        //     meta: { title: '首页'},
-        // },
-        // ],
+        path: '/',
+        redirect: '/home',
+            children: [
+            {
+                path: '/home',
+                name: 'home',
+                component: () => import('@/views/home/index.vue'),
+                meta: { title: '首页'},
+            },
+            ],
+    },
+    {
         path: '/',
         component: () => import('@/views/layout/index.vue'),
     }
