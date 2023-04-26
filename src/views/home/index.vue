@@ -1,13 +1,11 @@
 <template>
     <div class="index-frame">
-      <!-- <img src="@/assets/img/index-bg.jpg" class="index-img"> -->
+      <img src="@/assets/img/index-bg.jpg" class="index-img">
       <div class="index-title">
         
       </div>
       <div class="index-button">
-        <el-icon>
-          <Pointer />
-        </el-icon>
+          <i-icon-Pointer />
       </div>
     </div>
   </template>

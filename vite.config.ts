@@ -7,6 +7,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 
+
 const pathSrc = path.resolve(__dirname, 'src')
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -36,7 +37,11 @@ export default defineConfig({
         // Auto register icon components
         // 自动注册图标组件
         IconsResolver({
+          componentPrefix: "i",
           enabledCollections: ['ep'],
+          alias: {
+            'icon': "ep", //配置别名
+          },
         }),
         // Auto register Element Plus components
         // 自动导入 Element Plus 组件
