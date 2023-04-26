@@ -30,15 +30,15 @@ const goto = () => {
   height: 100%;
 }
 .index-img {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border: solid 3px #00151f;
-  border-radius: 20px;
-  background-color: #f4f5f7;
-  background-size: cover;
-  transition: all 0.4s ease-in-out;
-  z-index: -9;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: solid 3px #00151f;
+    border-radius: 20px;
+    background-color: #f4f5f7;
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    z-index: -9;
 }
 .index-title span{
   width: 100%;

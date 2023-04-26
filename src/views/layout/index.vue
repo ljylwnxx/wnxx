@@ -1,16 +1,18 @@
 <template>
   <div class="frame">
-    <aside>aside</aside>
     <div class="main-container">
       <div class="fixed-header">
-        <navbar>111</navbar>
+        <navbar></navbar>
       </div>
+      <aside>aside</aside>
       <app-main>222</app-main>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
+const router = useRouter()
 </script>
 
 <style scoped>

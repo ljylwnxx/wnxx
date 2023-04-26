@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     IEpPointer: typeof import('~icons/ep/pointer')['default']
     IEpUser: typeof import('~icons/ep/user')['default']
     IIconPointer: typeof import('~icons/ep/pointer')['default']
+    Navbar: typeof import('./components/header/navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
