@@ -17,7 +17,7 @@
       <!-- 菜单 -->
       <div class="menu">
         <div v-for="item in menu" :key="item.title">
-                <component :is="item.icon" />
+                <svg-icon :iconName="item.icon"></svg-icon>
                 <span>{{ item.title }}</span>    
         </div>
       </div>
@@ -28,27 +28,27 @@
 const menu = reactive([
     {
         title: '首页',
-        icon: 'HomeFilled'
+        icon: 'icon-home'
     },
     {
         title: '归档',
-        icon:'Collection'
+        icon:'icon-guidang'
     },
     {
         title: '友情链接',
-        icon:'Link'
+        icon:'icon-Link'
     },
     {
         title: '标签',
-        icon:'PriceTag'
+        icon:'icon-tag'
     },
     {
         title: '分类',
-        icon:'Grid'
+        icon:'icon-fenlei'
     },
     {
         title: '关于',
-        icon:'ChromeFilled'
+        icon:'icon-about'
     }
 ])
  
@@ -129,8 +129,10 @@ const menu = reactive([
     display: flex;
     cursor: pointer;
 }
-.el-icon i{
-    width: 25px;
-    height: 25px;
+.svg-icon {
+    width: 15px;
+    height: 15px;
+    color: #000;
 }
+
 </style>
