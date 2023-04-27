@@ -34,6 +34,18 @@ const router = useRouter()
 .logo-img {
     width: 50px;
     height: 50px;
+    cursor: pointer;
+}
+.logo-img:hover {
+/* 鼠标经过头像旋转360度 */
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  -o-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 .logo-line-before {
     display: block;
