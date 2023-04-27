@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@iconify-json/ep": "^1.1.10",
+    "@iconify-json/mdi": "^1.1.50",
     "@types/node": "^18.16.0",
     "@vitejs/plugin-vue": "^4.1.0",
     "typescript": "^5.0.2",

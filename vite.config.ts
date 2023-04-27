@@ -27,6 +27,7 @@ export default defineConfig({
         // 自动导入图标组件
         IconsResolver({
           prefix: 'Icon',
+          enabledCollections: ["carbon", "mdi"],
         }),
       ],
       dts: path.resolve(pathSrc, 'auto-imports.d.ts'),

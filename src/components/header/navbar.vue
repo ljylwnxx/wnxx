@@ -16,43 +16,39 @@
       </div>
       <!-- 菜单 -->
       <div class="menu">
-            <div v-for="(item, index) in menu" :key="index">
-                <el-icon>
-                    <component :is="'i-icon-'+ item.icon" />
-                </el-icon>
-                <span>{{ item.title }}</span>   
-            </div>
+        <div v-for="item in menu" :key="item.title">
+                <component :is="item.icon" />
+                <span>{{ item.title }}</span>    
+        </div>
       </div>
-      <el-icon><HomeFilled /></el-icon>
   </div>
 </template>
 
 <script setup lang="ts">
-import { HomeFilled } from "@element-plus/icons-vue";
 const menu = reactive([
     {
         title: '首页',
-        icon:'HomeFilled'
+        icon: 'HomeFilled'
     },
     {
         title: '归档',
-        icon:''
+        icon:'Collection'
     },
     {
         title: '友情链接',
-        icon:''
+        icon:'Link'
     },
     {
         title: '标签',
-        icon:''
+        icon:'PriceTag'
     },
     {
         title: '分类',
-        icon:''
+        icon:'Grid'
     },
     {
         title: '关于',
-        icon:''
+        icon:'ChromeFilled'
     }
 ])
  
