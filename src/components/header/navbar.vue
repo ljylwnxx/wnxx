@@ -1,22 +1,24 @@
 <template>
   <div class="header">
-      <!-- logo -->
-      <div class="logo">
-        <img src="@/assets/img/logo.png" class="logo-img">
-      </div>
-      <!-- 名称 -->
-      <div class="site-meta">
-         <span class="logo-line-before">
-            <i></i>
-         </span>
-         <span>xxx</span>
-         <span class="logo-line-after">
-            <i></i>
-         </span>
+      <div class="header-left"> 
+          <!-- logo -->
+        <div class="logo">
+            <img src="@/assets/img/logo.png" class="logo-img">
+        </div>
+        <!-- 名称 -->
+        <div class="site-meta">
+            <span class="logo-line-before">
+                <i></i>
+            </span>
+            <span>xxx</span>
+            <span class="logo-line-after">
+                <i></i>
+            </span>
+        </div>
       </div>
       <!-- 菜单 -->
       <div class="menu">
-        <div v-for="item in menu" :key="item.title">
+        <div v-for="item in menu" :key="item.title" class="menu-icon">
                 <svg-icon :iconName="item.icon"></svg-icon>
                 <span>{{ item.title }}</span>    
         </div>
@@ -61,9 +63,14 @@ const menu = reactive([
     display: flex;
     align-content: center;
     align-items: center;
+    justify-content: space-around;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(50px);
+}
+.header-left {
+    display: flex;
+    align-items: center;
 }
 .logo-img {
     width: 58px;
@@ -127,7 +134,11 @@ const menu = reactive([
 }
 .menu {
     display: flex;
+    align-items: center;
     cursor: pointer;
+}
+.menu-icon {
+    margin: 0 15px;
 }
 .svg-icon {
     width: 15px;
