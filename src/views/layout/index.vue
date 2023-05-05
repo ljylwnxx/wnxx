@@ -17,12 +17,11 @@ const router = useRouter()
 
 <style scoped>
 .frame{
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   border: solid 10px #00151f;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(50px);
   transition: all 0.4s ease-in-out;
