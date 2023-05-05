@@ -36,11 +36,11 @@ const menu = reactive([
     },
     {
         title: '友情链接',
-        icon:'icon-Link'
+        icon:'icon-link1'
     },
     {
         title: '标签',
-        icon:'icon-tag'
+        icon:'icon-tag1'
     },
     {
         title: '分类',
@@ -48,7 +48,7 @@ const menu = reactive([
     },
     {
         title: '关于',
-        icon:'icon-about'
+        icon:'icon-l-about'
     }
 ])
  
