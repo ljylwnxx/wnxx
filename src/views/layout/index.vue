@@ -4,7 +4,9 @@
       <div class="fixed-header">
         <navbar></navbar>
       </div>
-      <aside>aside</aside>
+      <div class="aside">
+        <aside></aside>
+      </div>
       <app-main>222</app-main>
     </div>
   </div>
