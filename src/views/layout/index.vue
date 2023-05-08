@@ -30,7 +30,7 @@
   backdrop-filter: blur(50px);
   transition: all 0.4s ease-in-out;
 }
-.aside {
+/* .aside {
   width: 400px;
   height: 100px;
 }
@@ -39,5 +39,5 @@
 }
 .footer {
   height: 80px;
-}
+} */
 </style>

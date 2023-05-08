@@ -1,5 +1,5 @@
 <template>
-  <div class="aside-frame">
+  <div class="aside">
     <!-- 头像 -->
     <div class="block">
           <el-avatar :size="50" :src="circleUrl" />
@@ -33,8 +33,8 @@ const menu = reactive([
 </script>
 
 <style scoped>
-.aside-frame {
-    width: 100px;
+.aside {
+    width: 400px;
     height: 100px;
     display: flex;
     flex-direction: column;
