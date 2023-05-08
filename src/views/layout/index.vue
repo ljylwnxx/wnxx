@@ -4,17 +4,19 @@
       <div class="fixed-header">
         <navbar></navbar>
       </div>
-      <app-main>222</app-main>
       <div class="aside">
         <aside></aside>
       </div>
+      <div class="main">
+        <main></main>
+      </div>
+      
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-const router = useRouter()
+
 </script>
 
 <style scoped>
@@ -28,9 +30,10 @@ const router = useRouter()
   backdrop-filter: blur(50px);
   transition: all 0.4s ease-in-out;
 }
-/* .aside {
+.aside {
+  width: 400px;
   height: 100px;
-} */
+}
 .main {
   height: 100%;
 }
