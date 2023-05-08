@@ -4,10 +4,10 @@
       <div class="fixed-header">
         <navbar></navbar>
       </div>
+      <app-main>222</app-main>
       <div class="aside">
         <aside></aside>
       </div>
-      <app-main>222</app-main>
     </div>
   </div>
 </template>
@@ -28,9 +28,9 @@ const router = useRouter()
   backdrop-filter: blur(50px);
   transition: all 0.4s ease-in-out;
 }
-.aside {
-  height: 80px;
-}
+/* .aside {
+  height: 100px;
+} */
 .main {
   height: 100%;
 }

@@ -1,5 +1,6 @@
 <template>
   <div class="aside-frame">
+    34
     <!-- 图标 -->
       <div class="menu">
         <div v-for="item in menu" :key="item.title" class="menu-icon">
@@ -24,6 +25,7 @@ const menu = reactive([
 
 <style scoped>
 .aside-frame {
+    height: 100px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
