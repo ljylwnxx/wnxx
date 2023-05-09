@@ -5,7 +5,7 @@
          <el-avatar :size="100" :src="circleUrl" />
     </div>
     <!-- 名称 -->
-    <span>xxxx</span>
+    <div>xxxx</div>
     <!-- 打印机 -->
     <!-- 分割虚线 -->
     <el-divider border-style="dashed" />
