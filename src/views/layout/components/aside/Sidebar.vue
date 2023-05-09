@@ -7,7 +7,7 @@
     <!-- 图标 -->
       <div class="menu">
         <div v-for="item in menu" :key="item.title" class="menu-icon">
-            <svg-icon :iconName="item.icon" ></svg-icon>
+            <svg-icon :iconName="item.icon" class="icon"></svg-icon>
         </div>
       </div>
   </div>
@@ -46,11 +46,12 @@ const menu = reactive([
   align-items: center;
   width: 40px;
   height: 40px;
-  border: 1px solid #000;
+  border: 2px solid #5d8966;
   border-radius: 50%;
   margin: 0 1rem;
+  
 }
-.svg-icon {
+.icon {
   width: 20px;
   height: 20px;
   color: #5d8966;
