@@ -18,6 +18,10 @@
     </div>
     <!-- 分割虚线 -->
     <el-divider border-style="dashed" />
+    <!-- 网站相关介绍 -->
+    <div class="website-introduce">
+
+    </div>
   </div>
 </template>
 
@@ -46,8 +50,8 @@ const menu = reactive([
     display: flex;
 }
 .social-svgicon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-left: 10px;
     cursor: pointer;
 }

@@ -47,14 +47,14 @@ const change = (index) => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 25px;
     
 }
 .menu {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .menu-icon {
   display: flex;
