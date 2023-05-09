@@ -1,5 +1,5 @@
 <template>
-  <div class="aside">
+  <div class="aside-frame">
     <!-- 头像 -->
     <div class="block">
           <el-avatar :size="50" :src="circleUrl" />
@@ -7,19 +7,15 @@
     <!-- 图标 -->
       <div class="menu">
         <div v-for="item in menu" :key="item.title" class="menu-icon">
-            <svg-icon :iconName="item.icon"></svg-icon>
+            <svg-icon :iconName="item.icon" ></svg-icon>
         </div>
       </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { reactive, toRefs } from 'vue';
+import circleUrl from '@/assets/img/logo.png'
 
-const state = reactive({
-  circleUrl: '@/assets/img/logo.png'
-})
-const { circleUrl} = toRefs(state)
 const menu = reactive([
     {
         title: '介绍',
@@ -33,17 +29,34 @@ const menu = reactive([
 </script>
 
 <style scoped>
-.aside {
-    width: 400px;
-    height: 100px;
+.aside-frame {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    color: #000;
+    align-items: center;
+    
 }
 .menu {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  color: #5d8966;
+  transition: all 0.4s ease-in-out;
+}
+.menu-icon.active {
+  background-color: #5d8966;
 }
 </style>
