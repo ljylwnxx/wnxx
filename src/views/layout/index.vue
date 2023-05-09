@@ -25,9 +25,9 @@ import Sidebar from './components/aside/Sidebar.vue'
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: solid 10px #00151f;
+  border: solid 8px #5d8966;
   border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff7ea;
   backdrop-filter: blur(50px);
   transition: all 0.4s ease-in-out;
 }
@@ -40,8 +40,8 @@ import Sidebar from './components/aside/Sidebar.vue'
   height: 500px;
   position: absolute;
   left: 150px;
-  border: solid 5px #00151f;
-  border-radius: 10px;
+  border: solid 5px #5d8966;
+  border-radius: 15px;
 }
 .main {
   height: 100%;

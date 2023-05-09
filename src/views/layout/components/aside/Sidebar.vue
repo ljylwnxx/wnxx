@@ -7,7 +7,9 @@
     <!-- 图标 -->
       <div class="menu">
         <div v-for="item in menu" :key="item.title" class="menu-icon">
-            <svg-icon :iconName="item.icon" class="icon"></svg-icon>
+            <svg-icon :iconName="item.icon" class="icon" @click="handlegoto">
+              
+            </svg-icon>
         </div>
       </div>
   </div>
@@ -15,7 +17,14 @@
 
 <script setup lang="ts">
 import circleUrl from '@/assets/img/logo.png'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
+const handlegoto = () => {
+  router.push({
+    path: '/index'
+  })
+}
 const menu = reactive([
     {
         title: '介绍',

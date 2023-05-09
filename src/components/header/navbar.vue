@@ -64,8 +64,8 @@ const menu = reactive([
     align-content: center;
     align-items: center;
     justify-content: space-around;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 20px 0 0;
+    background-color: #fbfae8;
     backdrop-filter: blur(50px);
 }
 .header-left {
