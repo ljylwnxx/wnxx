@@ -1,15 +1,15 @@
 <template>
   <div class="aside-frame">
     <!-- 图标 -->
-      <div class="menu">
-        <div v-for="(item,index) in menu" :key="index" class="menu-icon" @click="change(index)">
-            <svg-icon :iconName="item.icon" class="icon">
-            </svg-icon>
-        </div>
-        <keep-alive>
-           <component :is="componentName.com"></component>
-        </keep-alive>
+    <div class="menu">
+      <div v-for="(item,index) in menu" :key="index" class="menu-icon" @click="change(index)">
+          <svg-icon :iconName="item.icon" class="icon">
+          </svg-icon>
       </div>
+    </div>
+    <keep-alive>
+        <component :is="componentName.com"></component>
+    </keep-alive>
   </div>
 </template>
 
@@ -47,13 +47,14 @@ const change = (index) => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 .menu {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 .menu-icon {
   display: flex;

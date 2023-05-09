@@ -4,7 +4,8 @@
     <div class="block">
          <el-avatar :size="50" :src="circleUrl" />
     </div>
-    
+    <!-- 名称 -->
+    <span>xxxx</span>
   </div>
 </template>
 
@@ -13,5 +14,8 @@ import circleUrl from '@/assets/img/logo.png'
 </script>
 
 <style scoped>
-
+.introduce-frame {
+    display: flex;
+    flex-direction: column;
+}
 </style>
