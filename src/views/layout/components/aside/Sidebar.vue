@@ -1,30 +1,21 @@
 <template>
   <div class="aside-frame">
-    <!-- 头像 -->
-    <div class="block">
-          <el-avatar :size="50" :src="circleUrl" />
-    </div>
     <!-- 图标 -->
       <div class="menu">
-        <div v-for="item in menu" :key="item.title" class="menu-icon">
-            <svg-icon :iconName="item.icon" class="icon" @click="handlegoto">
-              
+        <div v-for="(item,index) in menu" :key="index" class="menu-icon" @click="change(index)">
+            <svg-icon :iconName="item.icon" class="icon">
             </svg-icon>
         </div>
+        <keep-alive>
+           <component :is="componentName.com"></component>
+        </keep-alive>
       </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import circleUrl from '@/assets/img/logo.png'
-import { useRouter } from 'vue-router'
-const router = useRouter()
-
-const handlegoto = () => {
-  router.push({
-    path: '/index'
-  })
-}
+import introduce from './introduce.vue'
+import catalog from './catalog.vue'
 const menu = reactive([
     {
         title: '介绍',
@@ -35,6 +26,20 @@ const menu = reactive([
         icon:'icon-mulu'
     }
 ])
+const list = reactive([
+  {
+    name: '介绍', com: markRaw(introduce)
+  },
+  {
+    name: '目录', com: markRaw(catalog)
+  }
+])
+const componentName = reactive({
+  com: list[0].com
+})
+const change = (index) => {
+  componentName.com = list[index].com
+}
 </script>
 
 <style scoped>
@@ -42,6 +47,7 @@ const menu = reactive([
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
     
 }
 .menu {
