@@ -7,6 +7,9 @@
     <!-- 名称 -->
     <span>xxxx</span>
     <!-- 打印机 -->
+    <h2 class="outline-none">
+        <TypeIt :values="title" :cursor="false" :speed="150" />
+    </h2>
     <!-- 分割虚线 -->
     <el-divider border-style="dashed" />
     <!-- 社交图标 -->
@@ -27,6 +30,7 @@
 
 <script setup lang="ts">
 import circleUrl from '@/assets/img/logo.png'
+import TypeIt from '@/components/typeit'
 
 const menu = reactive([
     {
@@ -38,6 +42,7 @@ const menu = reactive([
         icon: 'icon-gitee'
     }
 ])
+const title = ["hello world!", "good morning"]
 </script>
 
 <style scoped>
