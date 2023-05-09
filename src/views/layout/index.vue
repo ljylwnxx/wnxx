@@ -37,9 +37,10 @@ import Sidebar from './components/aside/Sidebar.vue'
 }
 .aside {
   width: 300px;
-  height: 500px;
+  height: 550px;
   position: absolute;
   left: 150px;
+  top: 130px;
   border: solid 5px #5d8966;
   border-radius: 15px;
 }
