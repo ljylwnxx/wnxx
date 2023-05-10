@@ -13,7 +13,9 @@
       <div class="main">
         <app-main></app-main>
       </div>
-      
+      <div class="footer">
+        <footer></footer>
+      </div>
     </div>
   </div>
 </template>
@@ -21,11 +23,12 @@
 <script setup lang="ts">
 import AppMain from './components/AppMain.vue'
 import Sidebar from './components/aside/Sidebar.vue'
+import footer from './components/footer/footer.vue'
 </script>
 
 <style scoped>
 .frame{
-  height: 100vh;
+  height: 282vh;
   display: flex;
   flex-direction: column;
   border: solid 8px #5d8966;
@@ -49,6 +52,7 @@ import Sidebar from './components/aside/Sidebar.vue'
   background-color: #fff7ea;
 }
 .main {
+  width: 80%;
   height: 100%;
 }
 .footer {

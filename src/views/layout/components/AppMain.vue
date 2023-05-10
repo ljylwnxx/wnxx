@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app-main">
     333
   </div>
 </template>
@@ -10,5 +10,7 @@ const router = useRouter()
 </script>
 
 <style scoped>
-
+.app-main {
+  width: 80%;
+}
 </style>
