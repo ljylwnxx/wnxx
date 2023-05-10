@@ -8,7 +8,7 @@
     <span>xxxx</span>
     <!-- 打印机 -->
     <h2 class="outline-none">
-        <TypeIt :values="title" :cursor="false" :speed="150" />
+        <TypeIt :values="title" :cursor="false" :speed="130" />
     </h2>
     <!-- 分割虚线 -->
     <el-divider border-style="dashed" />
