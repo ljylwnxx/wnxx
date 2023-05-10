@@ -27,7 +27,7 @@ const goto = () => {
 <style scoped>
 .index-frame {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .index-img {
     width: 100%;

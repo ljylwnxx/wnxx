@@ -14,7 +14,7 @@
         <app-main></app-main>
       </div>
       <div class="footer">
-        <footer></footer>
+        <Footer></Footer>
       </div>
     </div>
   </div>
@@ -23,12 +23,12 @@
 <script setup lang="ts">
 import AppMain from './components/AppMain.vue'
 import Sidebar from './components/aside/Sidebar.vue'
-import footer from './components/footer/footer.vue'
+import Footer from './components/bottom/Footer.vue'
 </script>
 
 <style scoped>
 .frame{
-  height: 282vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   border: solid 8px #5d8966;

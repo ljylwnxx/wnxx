@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 20px 20px 0 0;
-    background-color: #fbfae8;
+    background-color: #5d8966;
     backdrop-filter: blur(50px);
 }
 </style>
