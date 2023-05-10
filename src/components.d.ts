@@ -9,7 +9,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Abanner: typeof import('./components/abanner/abanner.vue')['default']
     Aside: typeof import('./components/aside/aside.vue')['default']
+    Banner: typeof import('./components/banner/banner.vue')['default']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es/el-button')['default']
     ElDivider: typeof import('element-plus/es')['ElDivider']

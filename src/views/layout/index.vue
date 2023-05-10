@@ -4,6 +4,9 @@
       <div class="fixed-header">
         <navbar></navbar>
       </div>
+      <div class="banner">
+        <banner></banner>
+      </div>
       <div class="aside">
         <Sidebar></Sidebar>
       </div>
@@ -16,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import AppMain from './components/appMain.vue'
+import AppMain from './components/AppMain.vue'
 import Sidebar from './components/aside/Sidebar.vue'
 </script>
 
@@ -43,6 +46,7 @@ import Sidebar from './components/aside/Sidebar.vue'
   top: 130px;
   border: solid 5px #5d8966;
   border-radius: 15px;
+  background-color: #fff7ea;
 }
 .main {
   height: 100%;
