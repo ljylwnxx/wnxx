@@ -28,8 +28,6 @@ import Footer from './components/bottom/Footer.vue'
 
 <style scoped>
 .frame{
-  display: none;
-  height: 100%;
   display: flex;
   flex-direction: column;
   border: solid 8px #5d8966;
@@ -39,7 +37,6 @@ import Footer from './components/bottom/Footer.vue'
   transition: all 0.4s ease-in-out;
 }
 .main-container {
-  height: 100vh;
   position: relative;
 }
 .aside {
@@ -53,8 +50,8 @@ import Footer from './components/bottom/Footer.vue'
   background-color: #fff7ea;
 }
 .main {
-  width: 80%;
-  height: 100%;
+  overflow: auto;
+  height: 600px;
 }
 .footer {
   height: 80px;

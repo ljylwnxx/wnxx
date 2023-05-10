@@ -10,13 +10,11 @@
 
 <style scoped>
 .footer-frame {
-    width: 100%;
     height: 80px;
     display: flex;
-    align-content: center;
     align-items: center;
     justify-content: space-around;
-    border-radius: 20px 20px 0 0;
+    border-radius: 0 0 20px 20px ;
     background-color: #5d8966;
     backdrop-filter: blur(50px);
 }
