@@ -135,26 +135,44 @@ const menu = reactive([
 }
 .menu {
     display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.menu-icon {
-    display: flex;
-    width: 50px;
-    margin: 0 15px;
+.menu .menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
 }
-
-.menu-title {
-    display: none;
+.menu .menu-icon:hover{
+    float: left;
+    width: 140px;
 }
-.menu-icon:hover .menu-title{
-    width: 100px;
-    display: block;
+.menu .menu-icon .svg-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
 }
-.svg-icon {
-    width: 15px;
-    height: 15px;
-    color: #000;
+.menu .menu-icon:hover span {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+.menu .menu-icon span {
+   display: none;
+}
+.menu .menu-icon:nth-child(n):hover .svg-icon{
+  background: #5d8966;
 }
 
 </style>
