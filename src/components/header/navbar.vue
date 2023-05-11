@@ -20,21 +20,14 @@
       <div class="menu">
         <div v-for="item in menu" :key="item.title" class="menu-icon">
                 <svg-icon :iconName="item.icon"></svg-icon>
-                <!-- <span>{{ item.title }}</span>     -->
-                <el-collapse v-model="activeName" accordion>
-                <el-collapse-item title="Consistency" name="1">
-                    <div>
-                    {{ item.title }}
-                    </div>
-                </el-collapse-item>
-                </el-collapse>
+                <span class="menu-title">{{ item.title }}</span>    
         </div>
       </div>
+      
   </div>
 </template>
 
 <script setup lang="ts">
-const activeName = ref('首页')
 const menu = reactive([
     {
         title: '首页',
@@ -147,8 +140,16 @@ const menu = reactive([
 }
 .menu-icon {
     display: flex;
-    flex-direction: row;
+    width: 50px;
     margin: 0 15px;
+}
+
+.menu-title {
+    display: none;
+}
+.menu-icon:hover .menu-title{
+    width: 100px;
+    display: block;
 }
 .svg-icon {
     width: 15px;
