@@ -1,6 +1,7 @@
 <template>
   <div class="footer-frame">
-   <span>12345</span>
+   <span> ©2022-2023 | xxx</span>
+   <span>xxx</span>
   </div>
 </template>
 
