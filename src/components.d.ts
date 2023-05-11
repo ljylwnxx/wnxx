@@ -14,6 +14,8 @@ declare module '@vue/runtime-core' {
     Banner: typeof import('./components/banner/banner.vue')['default']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es/el-button')['default']
+    ElCollapse: typeof import('element-plus/es')['ElCollapse']
+    ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
     ElDivider: typeof import('element-plus/es')['ElDivider']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     IEpPointer: typeof import('~icons/ep/pointer')['default']
