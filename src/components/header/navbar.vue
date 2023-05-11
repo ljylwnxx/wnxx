@@ -171,7 +171,7 @@ const menu = reactive([
    display: none;
 }
 .menu .menu-icon:nth-child(n):hover .svg-icon{
-  background: #5d8966;
+  background: #fbfae8;
 }
 
 </style>
