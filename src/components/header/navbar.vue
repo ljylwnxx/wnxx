@@ -156,16 +156,15 @@ const menu = reactive([
     width: 140px;
 }
 .menu .menu-icon .svg-icon {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   border-radius: 50px;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
 .menu .menu-icon:hover span {
   display: block;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
   transition: all 0.3s ease-out;
 }
 .menu .menu-icon span {
