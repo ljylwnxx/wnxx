@@ -14,3 +14,4 @@ const router = useRouter()
   width: 80%;
 }
 </style>
+
