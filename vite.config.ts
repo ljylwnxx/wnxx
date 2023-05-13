@@ -16,7 +16,9 @@ export default defineConfig({
     vue({
       include: [/\.vue$/, /\.md$/],
     }),
-    Markdown(),
+    Markdown({
+      headEnabled: true,
+    }),
     Pages({
       pagesDir: 'src/pages'
     }),
