@@ -26,6 +26,7 @@
     "unplugin-auto-import": "^0.15.3",
     "unplugin-icons": "^0.16.1",
     "unplugin-vue-components": "^0.24.1",
+    "vite-plugin-pages": "^0.29.0",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-markdown": "^0.23.4",
     "vue-tsc": "^1.2.0"
