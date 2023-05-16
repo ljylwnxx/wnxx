@@ -25,11 +25,13 @@
   color: #000;
 }
 .item-box{
-  width: 700px;
+  position: relative;
+  width: 800px;
   height: 270px;
+  left: 550px;
   top: 20px;
   border-radius: 20px;
-  box-shadow: 0 0 16px #ccc;
+  box-shadow: 0 0 16px #fff;
   background-color: #5d8966;
 }
 .item-box_imageContainer {
