@@ -51,7 +51,7 @@ import Footer from './components/bottom/Footer.vue'
 }
 .main {
   overflow: auto;
-  
+  height: 600px;
 }
 .footer {
   height: 80px;
