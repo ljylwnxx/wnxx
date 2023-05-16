@@ -15,14 +15,14 @@
             </div>
             <div class="item-box_footer">
                   <div class="item-box_detailsItem">
-                       <SvgIcon></SvgIcon>
+                       <SvgIcon class="icon-rili" iconName="icon-rili"></SvgIcon>
                        更新时间：
                        <span class="timeago">
                         klloodmjo
                        </span>
                   </div>
                   <div class="item-box_buttonBottom">
-                    <span>查看</span>
+                    <span>查看dianji</span>
                   </div>
             </div>
         </div>
@@ -91,15 +91,20 @@
     font-size: 12px;
 }
 .item-box_buttonBottom{
-   width: 100%;
+   width: 100px;
+}
+.svg-icon .icon-rili {
+    color: #fff;
 }
 .item-box_buttonBottom span {
     width: 100px;
-    border-radius: 50px;
-    background: #fff;
+    height: 50px;
     font-size: 12px;
+    border-radius: 30px;
+    background: #fff;
     border: 1px solid #f1f1f1;
     color: #666;
+    text-align: center;
 }
 .item-box_footer {
     padding-left: 16px;
