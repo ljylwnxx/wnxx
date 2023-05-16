@@ -49,6 +49,8 @@
   box-shadow: 0 0 16px #fff;
   background-color: #5d8966;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item-box_imageContainer {
     display: flex;
