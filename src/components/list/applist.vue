@@ -22,7 +22,7 @@
                        </span>
                   </div>
                   <div class="item-box_buttonBottom">
-                    <span>查看dianji</span>
+                     <span>查看dianji</span>
                   </div>
             </div>
         </div>
