@@ -8,6 +8,7 @@ import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
 import Markdown from 'vite-plugin-vue-markdown'
 import Pages from 'vite-plugin-pages'
+import prism from 'markdown-it-prism'
 
 const pathSrc = path.resolve(__dirname, 'src')
 // https://vitejs.dev/config/
@@ -18,6 +19,9 @@ export default defineConfig({
     }),
     Markdown({
       headEnabled: true,
+      markdownItUses: [
+        prism,
+      ],
     }),
     Pages({
       pagesDir: 'src/pages'

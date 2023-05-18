@@ -7,7 +7,12 @@ import SvgIcon from './components/SvgIcon/SvgIcon.vue'
 import '@/assets/iconfont/iconfont.js'
 import 'github-markdown-css'
 import { createHead } from "@unhead/vue"
-
+import 'prismjs'
+import 'prismjs/components/prism-bash'
+import 'prismjs/components/prism-typescript'
+import 'prismjs/components/prism-javascript'
+import 'prismjs/components/prism-markup'
+import 'prismjs/components/prism-markup-templating'
 
 const app = createApp(App)
 const head = createHead()
