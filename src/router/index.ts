@@ -20,6 +20,10 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/guidang',
         component: () => import('@/views/file/index.vue'),
+    },
+    {
+        path: '/tag',
+        component: () => import('@/views/label/index.vue'),
     }
 ]
 const router =createRouter({

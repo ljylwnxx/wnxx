@@ -35,7 +35,8 @@ const menu = reactive([
     },
     {
         title: '归档',
-        icon:'icon-guidang'
+        icon:'icon-guidang',
+        path: '/guidang'
     },
     {
         title: '友情链接',
@@ -60,7 +61,7 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const handlegoto = () => {
   router.push({
-    path: '/guidang'
+    path: ''
   })
 }
 </script>
