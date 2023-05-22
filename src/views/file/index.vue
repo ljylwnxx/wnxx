@@ -61,7 +61,6 @@ const activities = [
 
 <style scoped>
 .file{
-    width: 100%;
     display: flex;
     flex-direction: column;
     border: solid 8px #5d8966;
