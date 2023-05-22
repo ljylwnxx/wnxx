@@ -8,9 +8,9 @@
 </template>
 
 <script setup lang="ts">
-import test from '@/pages/test.md'
+import test from '../../../pages/test.md'
 import MarkdownIt from 'markdown-it'
-const md = new MarkdownIt(test.md)
+const md = new MarkdownIt()
 </script>
 
 <style scoped>
