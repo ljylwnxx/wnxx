@@ -20,7 +20,7 @@
       <div class="menu">
         <div v-for="item in menu" :key="item.title" class="menu-icon">
                 <svg-icon :iconName="item.icon"></svg-icon>
-                <span class="menu-title">{{ item.title }}</span>    
+                <span class="menu-title" @click="handlegoto">{{ item.title }}</span>    
         </div>
       </div>
       
@@ -55,6 +55,14 @@ const menu = reactive([
     }
 ])
  
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const handlegoto = () => {
+  router.push({
+    path: '/guidang'
+  })
+}
 </script>
 
 <style scoped>
